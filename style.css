@@ -41,6 +41,13 @@ div.content p{
     padding: 10px;
     border-radius: 15px;
 }
+.content h3{
+    text-align: center;
+    background-color: white;
+    color: teal;
+    padding: 5px;
+    border-radius: 25px;
+}
 #footer{
     background-color: rgb(0, 94, 94);
     color: gray;
@@ -67,9 +74,9 @@ ul.mesimet a{
 .dropbtn{
     background-color: white;
     color: teal;
-    padding: 10px;
+    padding: 10px 50px;
     border: none;
-    cursor: none;
+    cursor: pointer;
     font-family: Montserrat;
     border-radius: 25px;
     margin: 10px 5px 10px 5px;
@@ -83,10 +90,7 @@ ul.mesimet a{
     display: flexbox;
     background-color: rgb(0, 94, 94);
     margin: 0px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    
+    text-align: center;
 }
 ul.mesimet a:hover{
     background-color: white;
@@ -94,11 +98,11 @@ ul.mesimet a:hover{
 }
 .dropdown:hover ul.mesimet{
     display: block;
-    
+    transition: all 0.3s ease 0s;
+    border-radius: 0px 0px 25px 25px;
 }
 .dropdown:hover .dropbtn{
     opacity: 0.75;
-    
 }
 #cont a:hover{
     opacity: 0.75;
