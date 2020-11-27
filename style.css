@@ -3,17 +3,24 @@ body{
     background-color: rgb(0, 70, 70);
     font-family: Montserrat;
     margin: 0px;
+    font-style: normal;
+    font-weight: normal;
 }
 #logo{
     text-align: center;
     margin: 10px 0px;
     
 }
-div.content{
+#page{
     background-color: teal;
+    padding: 5px;
+}
+div.content{
+    background-color: white;
     color: white;
     padding: 10px;
-    margin-top: 0px;
+    margin: 10px 5px;
+    border-radius: 15px;
 }
 #cont{
     background-color: teal;
@@ -38,16 +45,25 @@ div.content p{
     background-color: white;
     margin: 5px;
     color: black;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 5px;
+    font-style: normal;
+   
 }
 .content h3{
     text-align: center;
-    background-color: white;
-    color: teal;
+    background-color: teal;
+    color: white;
     padding: 5px;
     border-radius: 25px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 70.35px;
+    z-index: 1;
 }
+.content h3 .dropdown:hover{
+    top: 148.6;
+}
+
 #footer{
     background-color: rgb(0, 94, 94);
     color: gray;
@@ -62,6 +78,7 @@ ul.mesimet{
     list-style-type: none;
     padding: 1px 10px 10px 10px ;
     display: none;
+    z-index: 2;
 }
 ul.mesimet a{
     text-decoration: none;
@@ -70,10 +87,100 @@ ul.mesimet a{
     border-radius: 25px;
     color: white;
     display: block;
+    z-index: 2;
 }
 .dropbtn{
     background-color: white;
     color: teal;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    border-radius: 15px;
+    margin: 10px 5px 10px 5px;
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+    display: inline;
+    z-index: 2;
+    vertical-align: middle;
+}
+.dropdown{
+    position: relative;
+    display: flexbox;
+    background-color: rgb(0, 94, 94);
+    margin: 0px;
+    text-align: center;
+    z-index: 2;
+}
+ul.mesimet a:hover{
+    background-color: white;
+    color: teal;
+}
+.dropdown:hover ul.mesimet{
+    display: block;
+    transition: all 0.3s ease 0s;
+    border-radius: 0px 0px 25px 25px;
+    z-index: 2;
+}
+.dropdown:hover .dropbtn{
+    opacity: 0.75;
+}
+#cont a:hover{
+    opacity: 0.75;
+    transition: 0.3s text/background ease 0s;
+}
+ul.lendet{
+    text-decoration: none;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    display: block;
+    z-index: 2;
+}
+.dropdown:hover ul.lendet{
+    display: block;
+    transition: all 0.3s ease 0s;
+    border-radius: 0px 0px 25px 25px;
+    z-index: 2;
+}
+h3.content .dropdown:hover {
+    top: 520.3px;
+}
+.dropdown:hover .dropbtn2{
+    opacity: 0.75;
+}
+.dropbtn2{
+    background-color: white;
+    color: teal;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    border-radius: 15px;
+    margin: 10px 5px 10px 5px;
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+    display: inline;
+    z-index: 2;
+}
+#page img{
+    margin: 0px;
+    border: 3px solid teal;
+    border-radius: 15px;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    text-align: justify;
+}
+.Backup{
+    background-color: white;
+    color: #008080;
     padding: 10px 50px;
     border: none;
     cursor: pointer;
@@ -84,27 +191,19 @@ ul.mesimet a{
     text-align: center;
     justify-content: center;
     display: inline;
+    z-index: 2;
 }
-.dropdown{
-    position: relative;
-    display: flexbox;
-    background-color: rgb(0, 94, 94);
-    margin: 0px;
-    text-align: center;
-}
-ul.mesimet a:hover{
+.navicon{
     background-color: white;
-    color: teal;
+    padding: 5px;
+    border-radius: 15px;
+    vertical-align: middle;
+    
 }
-.dropdown:hover ul.mesimet{
-    display: block;
-    transition: all 0.3s ease 0s;
-    border-radius: 0px 0px 25px 25px;
-}
-.dropdown:hover .dropbtn{
-    opacity: 0.75;
-}
-#cont a:hover{
-    opacity: 0.75;
-    transition: 0.3s text/background ease 0s;
+.dropbtn .navicon{
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    vertical-align: middle;
+    
 }
