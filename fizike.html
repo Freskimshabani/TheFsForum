@@ -13,55 +13,91 @@
         </div>
         
         <div id="cont">
-                <div class="dropdown" style="border-radius: 25px; position: -webkit-sticky; position: sticky; top: 0px;">
-                    <a href="index.html" style="text-align: right;"><img class="navicon" src="images/Homeicon.png" style="padding:10px; height: 30.35px; width: 31.4px; margin: 10px 5px;"></a>
-                    <button class="dropbtn"><img class="navicon" src="images/Bookicon.png" style="height: 30.35px; width: 31.4px;"></button>
-                    <ul class="mesimet" id="navbar" style="background-color: rgb(0, 94, 94); list-style-type: none; text-decoration: none; margin: 0px; padding: 10px;">
-                        <a class="selected" href="fizike.html">Fizike</a>
-                        <a href="#">Matematike</a>                    
-                        <a href="#">Gjeografi</a>
-                        <a href="#">Kimi</a>
-                        <a href="#">Biologji</a>
-                        <a href="#">Psikologji</a>
-                    </ul>
-                    <button class="dropbtn"><img class="navicon" src="images/Bookmark.png" style="height: 30.35px; width: 31.4px;"></button>
-                      
-                    <ul class="mesimet">
-                        <a href="#LekVale">Lekundjet dhe Valet</a>
-                        <a href="#Zeri">Zeri</a>
-                    </ul>   
-                </div>
-            
-            
-            
-            
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="images/Homeicon.png"></a></li>
+                    <li><a href="#cont"><img src="images/Bookicon.png"></a>
+                        <ul>
+                            <li class="selected"><a  href="fizike.html">Fizike</a></li>
+                            <li><a href="mat.html">Matematike</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#cont"><img src="images/Bookmark.png"></a>
+                        <ul style="width: max-content;">
+                            <li><a href="#LekVale">Lekundjet dhe Valet</a></li>
+                            <li><a href="#Zeri">Zeri</a></li>
+                            <li><a href="#Lengjet">Lengjet</a></li>
+                        </ul>
+                        
+
+                    </li>
+                    <li><a href="#cont"><img src="images/Beakericon.png"></a>
+                        <ul>
+                            <li><a href="#formula">Formulat</a></li>
+                            <li><a href="#shembujt">Shembujt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div id="page">
                 <div id="LekVale" class="content">
                     <h3>Lekundjet Dhe Valet</h3>
-                    <p><u>1.Levizjet Lekundese</u></br><br>Levizjet lekundese jane ato levizje te cilat pika e cila zhvendoset nga pika ekuilibruese ne nje pike tjeter e cila kthehet prap tek pika ekuilibruese.</br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat totam repellendus officiis quis accusamus. Voluptas temporibus earum enim aliquam maxime voluptates eum, consequuntur provident, assumenda inventore, esse odio voluptatibus.</p>
-                    <img src="images/Fizike/Levizjet Lekundese/osm1.gif" style="text-align: center;">
-                    <img src="images/Fizike/Levizjet Lekundese/osm1.gif" style="text-align: center;">
+                    <p><u>1.Levizjet Lekundese</u></br><br>Lëvizjet periodike që kryhen herë nga njëra anë, e herë nga ana tjetër, ndaj një pozite të caktuar ekuilibruese quhen lëvizje lëkundëse.</br></br>Pozitat maksimale te trupit ndaj pikes ekuilibruese quhen amplitude dhe jane te barabarta.</br></br>Cfardo largesie, e trupit nga pozita ekuilibruese, ne nje moment kohe quhet elongacion.</br></br>Pozita e trupit ne rrugen e lekundjes se bashku me shpejtesine sipas kahut dhe intensitetit percakton fazen e lekundjes.</br></br>Frekuenca eshte e barabarte me numrin e lekundjeve te plota qe kryen trupi ne njesi te kohes.</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/Frek.png">
+                    <p>Lëvizja e thjeshtë harmonike është një lloj i veçantë i lëvizjes periodike ku forca rikthyese në
+                        objektin në lëvizje është drejtpërdrejt proporcionale me madhësinë e zhvendosjes së objektit
+                        dhe vepron drejt pozicionit të ekuilibrit të objektit.</p>
+                    <p><u>2.Lavjerresi Matematik</u><br><br>Lekundje te lira jane ato lekundje te cilat gjithmone kryhen ne mungese te forcave te jashtme. Lekundjet e lira kryhen me frekuence vehtiake.</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/frekv.png">
+                    <p>Lavjerres matematik quajme piken materiale e cila nen ndikimin e forces se rendimit mund te
+                        levize neper harkun e rrethit vertikal.<br><br>Koha e zgjatjes se nje lekundjeje te plote quhet periode e lavjerresit T.<br><br><u>3.Lekundjet e Shuara</u><br><br>Lekundjet, amplituda e te cilave vazhdimisht zvogelohet, quhen lekundje te shuara.</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/koefsh.png">
+                    <p><u>4.Lekundjet e Detyrueshme</u><br><br>Lekundjet e nje trupi, te cilat kryhen nen veprimin e nje force te jashtme periodike, quhen
+                        lekundje te detyrueshme.<br><br>Amplituda e lekundjeve te detyrueshme varet prej frekuences se forces se jashtme ω dhe
+                        shprehet me shprehjen:</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/Amp.png">
+                    <p>Ne rastin kur ω=ω0, atehere fitohet amplitude pambarim e madhe, qe quhet rezonance.
+                        Nese nuk jane te barabarta atehere amplituda do te ngritet dhe do te ulet pas nje pike.<br><br><u>5.Burimi i Valeve Mekanike</u><br><br>Procesi i perhapjes se lekundjeve dhe energjise neper mjedisin e dhene quhet vale.<br><br>Valet te cilat perhapen neper mjedis elastik quhen vale mekanike.<br><br>Mjedis elastik, paraqet mjedisin ne te cilin grimcat jane te lidhura me forca elastike. Prandaj
+                        valet mekanike paraqesin procesin e bartjes se energjise mekanike prej nje grimce te mjedisit ne
+                        tjetren.<br><br>Burim i vales quhet zhvendosja e nje grimce nga pika ekuilibruese nen veprimin e nje force.<br><br><u>6.Llojet e Valeve</u><br><br>Sipas drejtimit te lekundjes se grimcave ne vale, valet mund te ndahen ne:
+                        Vale transversale dhe longitudinale.<br><br>Vala eshte transversale, nese lekundja e grimcave kryhet ne drejtim normal ndaj drejtimit te
+                        perhapjes se vales.<br><br>Vala eshte longitudinale, nese lekundja e grimces ne vale kryhet ne te njejtin drejtim, ne te cilin
+                        perhapet vala.<br><br>Sipas menyres se bartjes se energjise te lekundjeve te grimcave:<br>
+                        <ol><li>Vale progresive eshte vala qe levize ne drejtim te caktuar dhe gjate kesaj energjia bartet nga
+                        grimca ne grimce.</li><li>Vale e perqendruar eshte vale e atille ne te cilen disa grimca lekunden kurse disa te tjera
+                        vazhdimisht jane te palevizshme.</li></ol></p>
+                    <p>Sipas formes dhe mjedisit:<br>
+                        <ol><li>Valet lineare- si ne tel</li>
+                        <li>Valet siperfaqesore- valet e ujit, si kombinim i valeve transversale dhe longitudinale</li>
+                        <li>Valet hapsinore- valet e zerit.</li></ol>
+                    </p>
+                    <p>
+                        <u>7.Karakteristikat e Valeve</u><br><br>Elongacioni i vales paraqet largesine momentale te pikes se zgjedhur ne lakoren e vales te
+                        drejtimi i perhapjes se saj.<br><br>Amplituda paraqet largesine maksimale nga lakorja e vales deri te drejtimi i perhapjes.<br><br>Perioda T e vales eshte e barabarte me perioden e lekundjes se grimcave te mjedisit.<br><br>Breg i vales quhet largesia maksimale e nje pike ne vale nga drejtimi i perhapjes.<br><br>Lug i vales quhet largesia minimale e nje pike ne vale nga drejtimi i perhapjes<br><br>Gjatesia valore e vales paraqet largesine mes dy grimcave qe lekunden me faze te njejte. Dy
+                        grimca lekunden me faze te njejte nese gjenden ne pozita te njejta dhe e kane kahun e njejte te
+                        lekundjes.<br><br>Frekuence kuptohet sa shpesh ndonje gjendje perseritet per nje kohe.<br><br>Perioda e vales eshte koha per te cilen vala e kalon nje gjatesi te vet valore.<br><br>Shpejtesia e fazes se vales eshte shpejtesia me te cilen perhapet faza e vales.<br><br>Shpejtesia e vales mekanike ne rend te pare varet nga moduli i elasticitetit E dhe
+                        kompresibilitetiti i mjedisit K neper te cilin perhapet.<br><br></p>
+                    <img src="images/Fizike/Levizjet Lekundese/Shembujt/ValaLek.png">
+                    <p><u>8.Shpejtesia e valeve ne mjedise</u><br><br>Valet kane shpejtesi te ndryshme ne mjedise te ndryshme, te cilat gjithashtu percaktohen me madhesi fizike te ndryshme. Per Valet longitudinale kemi:
+                    </p>
+                    <p>Shpejtesia e valeve longitudinale ne mjedis te ngurte:</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/shng.png">
+                    <p>Shpejtesia e valeve longitudinale ne mjedis te lenget:</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/shlg.png">
+                    <p>Shpejtesia e valeve longitudinale ne mjedis te gazte:</p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/shga.png">
+                    <p>
+                        Dhe per Valet transversale kemi vetem nje formule:
+                    </p>
+                    <img src="images/Fizike/Levizjet Lekundese/Formulat/shvt.png">
+                    <p><u>9.Ekuacioni i valeve</u><br><br></p>
+                    
+                        
+                    
                 </div>
                 <div class="content">
                     <h3 id="Zeri">Zeri</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
-                </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
-                </div>
-                <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat omnis nulla optio, voluptates cupiditate dolorem, temporibus, ad non sunt modi illo natus id quo quidem. Aut nemo deleniti dolores?</p>
                 </div>
             </div>

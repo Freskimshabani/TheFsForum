@@ -57,13 +57,22 @@ div.content p{
     border-radius: 25px;
     position: sticky;
     position: -webkit-sticky;
-    top: 70.35px;
+    top: 84.34px;
     z-index: 1;
 }
 .content h3 .dropdown:hover{
     top: 148.6;
 }
-
+.content p ol{
+    text-align: left;
+}
+ol{
+    margin: 0px;
+}
+ol li{
+    color: black;
+    margin: 5px;
+}
 #footer{
     background-color: rgb(0, 94, 94);
     color: gray;
@@ -72,102 +81,11 @@ div.content p{
     border-radius: 0px 0px 25px 25px;
     font-size: xx-large;
 }
-ul.mesimet{
-    background-color: rgb(0, 94, 94);
-    margin: 0px;
-    list-style-type: none;
-    padding: 1px 10px 10px 10px ;
-    display: none;
-    z-index: 2;
-}
-ul.mesimet a{
-    text-decoration: none;
-    background-color: teal;
-    padding: 10px;
-    border-radius: 25px;
-    color: white;
-    display: block;
-    z-index: 2;
-}
-.dropbtn{
-    background-color: white;
-    color: teal;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: Montserrat;
-    border-radius: 15px;
-    margin: 10px 5px 10px 5px;
-    font-size: medium;
-    text-align: center;
-    justify-content: center;
-    display: inline;
-    z-index: 2;
-    vertical-align: middle;
-}
-.dropdown{
-    position: relative;
-    display: flexbox;
-    background-color: rgb(0, 94, 94);
-    margin: 0px;
-    text-align: center;
-    z-index: 2;
-}
-ul.mesimet a:hover{
-    background-color: white;
-    color: teal;
-}
-.dropdown:hover ul.mesimet{
-    display: block;
-    transition: all 0.3s ease 0s;
-    border-radius: 0px 0px 25px 25px;
-    z-index: 2;
-}
-.dropdown:hover .dropbtn{
-    opacity: 0.75;
-}
-#cont a:hover{
-    opacity: 0.75;
-    transition: 0.3s text/background ease 0s;
-}
-ul.lendet{
-    text-decoration: none;
-    background-color: teal;
-    padding: 10px;
-    border-radius: 25px;
-    color: white;
-    display: block;
-    z-index: 2;
-}
-.dropdown:hover ul.lendet{
-    display: block;
-    transition: all 0.3s ease 0s;
-    border-radius: 0px 0px 25px 25px;
-    z-index: 2;
-}
-h3.content .dropdown:hover {
-    top: 520.3px;
-}
-.dropdown:hover .dropbtn2{
-    opacity: 0.75;
-}
-.dropbtn2{
-    background-color: white;
-    color: teal;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: Montserrat;
-    border-radius: 15px;
-    margin: 10px 5px 10px 5px;
-    font-size: medium;
-    text-align: center;
-    justify-content: center;
-    display: inline;
-    z-index: 2;
+#page{
+    color: black;
 }
 #page img{
-    margin: 0px;
+    margin: 5px;
     border: 3px solid teal;
     border-radius: 15px;
     justify-content: center;
@@ -193,17 +111,93 @@ h3.content .dropdown:hover {
     display: inline;
     z-index: 2;
 }
-.navicon{
+
+
+nav{
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 94, 94);
+    margin: 0px;
+    z-index: 2;
+}
+nav img{
+    border-radius: 20%;
     background-color: white;
+    height: 30.35px; 
+    width: 31.4px;
+    padding: 15px;
+
+}
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+nav>ul>li{
+    display: inline-block;
+    margin: 0px 5px;
+    position: relative;
+}
+nav>ul>li:hover{
+}
+nav>ul>li>ul{
+    display: none;
+    color: white;
+    background-color: rgb(0, 94, 94);
+    position: absolute;
+    top: 100%;
+    left: 0%;
     padding: 5px;
-    border-radius: 15px;
-    vertical-align: middle;
+    margin: 0px;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    width: auto;
+
+}
+nav>ul>li:hover>ul{
+    display: block;
+    animation: sldw 0.3s forwards;
+}
+nav>ul>li>ul>li{
+    text-align: center;
+    background-color: teal;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 5px;
     
 }
-.dropbtn .navicon{
-    background-color: white;
-    padding: 5px;
-    border-radius: 15px;
-    vertical-align: middle;
+nav>ul>li>ul>li:hover{
+    animation: hov 0.5s forwards;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
     
+}
+nav li.selected {
+    background-color: white;
+    color: teal;
+}
+nav li.selected a{
+    color: teal;
+}
+@keyframes sldw{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes hov{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.75;
+    }
 }
