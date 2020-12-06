@@ -20,26 +20,11 @@ div.content{
     color: white;
     padding: 10px;
     margin: 10px 5px;
-    border-radius: 15px;
+    
 }
 #cont{
     background-color: teal;
     border-radius: 25px;
-}
-#navbar a{
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 25px;
-    color: white; 
-    background-color: teal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 5px;
-}
-#navbar a.selected{
-    color: teal;
-    background-color: white;
 }
 div.content p{
     background-color: white;
@@ -54,7 +39,7 @@ div.content p{
     background-color: teal;
     color: white;
     padding: 5px;
-    border-radius: 25px;
+    
     position: sticky;
     position: -webkit-sticky;
     top: 84.34px;
@@ -78,7 +63,6 @@ ol li{
     color: gray;
     margin: 0px;
     padding: 10px;
-    border-radius: 0px 0px 25px 25px;
     font-size: xx-large;
 }
 #page{
