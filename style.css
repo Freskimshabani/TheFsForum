@@ -105,8 +105,9 @@ nav{
     background-color: rgb(0, 94, 94);
     margin: 0px;
     z-index: 2;
+
 }
-nav img{
+nav img.navicon{
     border-radius: 20%;
     background-color: white;
     height: 30.35px; 
@@ -124,6 +125,7 @@ nav>ul>li{
     display: inline-block;
     margin: 0px 5px;
     position: relative;
+    vertical-align: middle;
 }
 nav>ul>li:hover{
 }
@@ -146,6 +148,9 @@ nav>ul>li:hover>ul{
     display: block;
     animation: sldw 0.3s forwards;
 }
+nav>ul>li:hover::after>ul{
+    animation: sldu 0.3s forwards;
+}
 nav>ul>li>ul>li{
     text-align: center;
     background-color: teal;
@@ -157,6 +162,7 @@ nav>ul>li>ul>li{
 nav>ul>li>ul>li:hover{
     animation: hov 0.5s forwards;
 }
+
 nav li a{
     text-decoration: none;
     color: white;
@@ -183,5 +189,13 @@ nav li.selected a{
     }
     to{
         opacity: 0.75;
+    }
+}
+@keyframes sldu{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
     }
 }
